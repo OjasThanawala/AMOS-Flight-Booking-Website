@@ -1,0 +1,155 @@
+body{
+	margin: 0 auto;
+	background-image: url("vnice.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 1080px;
+
+}
+.header{
+	background:rgba(255,255,255, 0.1);
+	width: 100%;
+	height: 130px;
+	border-radius: 0px;
+}
+.header img{
+	height: 80px;
+	width: 200px;
+	margin-left: 15px;
+	margin-top: 15px;
+	
+}
+.container{
+	width: 500px;
+	height: 700px;
+	text-align: center;
+	background:rgba(255,255,255, 0.1);
+	border-radius: 8px;
+	margin: 0 auto;
+	margin-top: 150px;
+}	
+.container img{
+	width: 600px;
+	height: 320px;
+	margin-top: -166px;
+	margin-bottom: 30px;
+	margin-left: -60px;
+}
+input[type="text"],input[type="password"]{
+	height: 45px;
+	width: 300px;
+	border-radius: 1px;
+	font-size: 18px;
+	margin-bottom: 80px;
+	margin-top: -70px;
+	background-color: #fff;
+	padding-left: 35px;
+	border: none;
+
+}
+.form-input::before{
+	content: "\f007";
+	position: absolute;
+	font-family: "FontAwesome";
+	font-size: 20px;
+	padding-left: 5px;
+	color: #2ECC71;
+	padding-top: 5px;
+	margin-top: -70px;
+}
+.form-input:nth-child(2)::before{
+	content: "\f007";
+}
+.form-input:nth-child(4)::before{
+	content: "\f0e0";
+	font-size: 18px;
+}
+.form-input:nth-child(5)::before{
+	content: "\f023";
+
+}
+.form-input:nth-child(6)::before{
+	content: "\f023";
+
+}
+
+input[type=date] {
+  height: 45px;
+  width: 300px;
+  font-family: arial, sans-serif;
+  font-size: 18px;
+  
+  text-transform: lowercase;
+  background-color: #fff;
+  border-radius: 1px;
+  border: none;
+  padding-left: 35px;
+  margin-top: -70px;
+  
+}
+input[type=date]::-webkit-datetime-edit-month-field {
+  color: #c0c0c0;
+}
+input[type=date]::-webkit-datetime-edit-day-field {
+  color: #c0c0c0;
+}
+input[type=date]::-webkit-datetime-edit-year-field {
+  color: #c0c0c0;
+}
+input[type=date]::-webkit-clear-button {
+  font-size: 18px;
+  height: 30px;
+  position: relative;
+  right: 5px;
+  margin-right: 4px;
+}
+input[type=date]::-webkit-inner-spin-button {
+  height: 30px;
+}
+input[type=date]::-webkit-calendar-picker-indicator {
+  font-size: 18px;
+}
+input[type=date]::-webkit-calendar-picker-indicator:hover {
+  background-color: #959595;
+  color: #e6e6e6;
+  cursor: pointer;
+}
+input[type=date]::-webkit-calendar-picker-indicator:active {
+  color: blue;
+}
+.form-input:nth-child(7)::before{
+	content: "\f1fd";
+	font-size: 18px;
+}
+
+
+.btn-signup{
+	padding: 20px, 20px;
+	height: 40px;
+	width: 200px;
+	margin-top: 50px;
+	color: #fff;
+	border: none;
+	background-color: #2ECC71; 
+	border-bottom: 4px solid #27AE60;
+	margin-bottom: 30px;
+	border-radius: 8px;
+                   cursor: pointer;
+}
+
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.tnc{
+	font-family: sans-serif;
+}
+a{
+	color: #fff;
+
+}
+
+#footer{
+	margin-top: 140px;
+	font-family: verdana;
+	color: #fff;
+}

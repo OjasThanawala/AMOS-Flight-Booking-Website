@@ -1,0 +1,121 @@
+<html>
+<head>
+	<title>AMOS air ticketing</title>
+	<link rel="stylesheet" type="text/css" href="homepagestyle.css">
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<script type="text/javascript">
+		function ValidateForm(){
+			var username=document.getElementById('username').value;
+			var password=document.getElementById('password').value;
+
+			if (username=="" || password=="") {
+				alert("Please fill all the fields!");
+				return false;
+			}
+			else{
+				return true;
+			}
+			
+			}
+		
+	</script>
+
+</head>
+<body>
+	<div class="header">
+		<img src="logo7.png">
+
+
+
+	</div>
+	
+	<div class="container">
+		
+
+	<div class="boxed">
+	<h2>Make a Trip</h2>
+	</div>
+	
+			
+
+			<div class="mainselection" >
+<select name="State" id="choice" placeholder="from" >
+
+    <option value="" disabled selected>From</option>
+      <option value="Mumbai">Mumbai</option>
+  <option value="Banglore">Banglore</option>
+  <option value="Delhi">Delhi</option>
+  <option value="Hyderabad">Hyderabad</option>                          
+</select>
+</div>
+
+<div class="mainselection2" >
+<select name="State" id="choice" placeholder="To" >
+    <option value="" disabled selected>To</option>
+      <option value="Mumbai">Mumbai</option>
+  <option value="Banglore">Banglore</option>
+  <option value="Delhi">Delhi</option>
+  <option value="Hyderabad">Hyderabad</option>                          
+</select>
+</div>
+
+
+
+
+<div class="form-input">
+		<input type="date" id="dob" placeholder="departure">
+			</div>
+<div class="mainselection3" >
+<select name="Adult" id="choice"  >
+    <option value="" disabled selected>Adult(Above 12yrs)</option>
+      <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>                          
+</select>
+</div>
+
+<div class="mainselection4" >
+<select name="Child" id="choice"  >
+    <option value="" disabled selected>Child(0-12yrs)</option>
+      <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>                        
+</select>
+
+</div>
+
+
+
+
+<div class="mainselection5" >
+<select name="Adult" id="choice"  >
+    <option value="" disabled selected>Class</option>
+      <option value="1">Economy</option>
+  <option value="2">Business</option>
+  <option value="3">First</option>
+                          
+</select>
+</div>
+
+
+
+
+
+
+<a href="fa.html"><button class="button button2"> Search Flight</button></a> 
+
+
+		</form>
+	
+		<div id="footer">
+			Copyright &copy; 2016 AMOS.
+			
+		</div>
+	</div>
+
+
+</body>

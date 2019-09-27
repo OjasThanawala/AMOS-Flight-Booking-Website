@@ -1,0 +1,95 @@
+<html>
+<head>
+	<title>AMOS air ticketing</title>
+	<link rel="stylesheet" type="text/css" href="stylenewuser.css">
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<script type="text/javascript">
+		function ValidateForm(){
+			var fname=document.getElementById('fname').value;
+			var sname=document.getElementById('sname').value;
+			var uname=document.getElementById('uname').value;
+			var email=document.getElementById('email').value;
+			var password=document.getElementById('password').value;
+			var cpassword=document.getElementById('cpassword').value;
+			var dob=document.getElementById('dob').value;
+			var check=document.getElementById('checkbox').value;
+			var emailfilter=/^\w+[\+\.\w-]*@([\w-]+\.)*\w+[\w-]*\.([a-z]{2,4}|\d+)$/i;
+			var b=emailfilter.test(document.myForm.email.value);
+
+			if (b == false) {
+				alert("Invalid Email ID");
+				document.myForm.email.focus();
+				return false;
+			}
+			 if (fname=="" || sname=="" || uname=="" || email=="" || password=="" || cpassword=="" || dob=="") {
+				alert("Please fill all the fields!");
+				return false;
+			}
+			if (password!=cpassword) {
+				alert("password don't match");
+				return false;
+			}
+			if (password.length<5) {
+				alert("Password should be more than 5 characters");
+				return false;
+			}
+			if (document.myForm.checkbox.checked == false) {
+				alert("You have to agree with the Terms and Conditions")
+				return false;
+			}
+			
+			else{
+				return true;
+			}
+			
+			}
+		
+	</script>
+</head>
+<body>
+	<div class="header">
+		<img src="logo7.png">
+	</div>
+	<div class="container">
+		<img src="welcome1.png">
+		<form method="post" name="myForm" onsubmit="return ValidateForm()" action="demo-form.asp">
+			<div class="form-input">
+				<input type="text" name="First-name" placeholder="First Name" id="fname">
+			</div>
+			<div class="form-input">
+				<input type="text" name="Surname" placeholder="Surname" id="sname">
+			</div>
+			<div class="form-input">
+				<input type="text" name="username" placeholder="Username" id="uname">
+			</div>
+			<div class="form-input">
+				<input type="text" name="email" placeholder="Email Address" id="email">
+			</div>
+			<div class="form-input">
+				<input type="password" name="password" placeholder="Enter Password" id="password">
+			</div>
+			<div class="form-input">
+				<input type="password" name="cpassword" placeholder="Confirm Password" id="cpassword">
+			</div>
+			<div class="form-input">
+				<input type="date" id="dob">
+			</div><br>
+			
+		<div class="tnc">
+		<input type="checkbox" name="checkbox" id="checkbox" checked="true">
+          <span class="input-label">I accept the </span>
+          <a href="tnc.html">Terms and Conditions</a>
+          <br></div>
+		
+			<input type="submit" name="submit" value="Sign Up!" class="btn-signup button2"><br>
+			
+			
+		</form>
+		<div id="footer">
+			Copyright &copy; 2016 AMOS.
+			
+		</div>
+	</div>
+
+
+</body>

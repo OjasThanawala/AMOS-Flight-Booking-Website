@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title>AMOS air ticketing</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<script type="text/javascript">
+		function ValidateForm(){
+			var username=document.getElementById('username').value;
+			var password=document.getElementById('password').value;
+
+			if (username=="" || password=="") {
+				alert("Please fill all the fields!");
+				return false;
+			}
+			else{
+				return true;
+			}
+			
+			}
+		
+	</script>
+</head>
+<body>
+	<div class="header">
+		<img src="logo7.png">
+
+	</div>
+	<div class="container">
+
+		<img src="avatar.png">
+		<form method="post" name="myForm" action="demo_form.asp" onsubmit="return ValidateForm()">
+			<div class="form-input">
+				<input type="text" name="username" placeholder="Username" id="username" >
+			</div>
+			<div class="form-input">
+				<input type="password" name="password" placeholder="Enter Password" id="password">
+			</div>
+			
+			<input type="button" name="submit" onclick= "window.location.href='details.html'" value="Login" class="new-user  button2 ">
+			<br>
+			 
+			<input type="button" name="submit" onclick= "window.location.href='newuser.html'" value="New User? Sign Up" class="new-user  button2 ">
+			<br>
+			<a href="#">Forgot password?</a>
+		</form>
+	
+		<div id="footer">
+			Copyright &copy; 2016 AMOS.
+			
+		</div>
+	</div>
+
+
+</body>
